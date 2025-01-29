@@ -2,7 +2,7 @@ docker-compose-yaml: docker-compose.yml
 
 project: glyn-drupal-base
 
-  tasks:
+tasks:
   pre-rollout:
 
   post-rollout:
