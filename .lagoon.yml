@@ -1,6 +1,6 @@
 docker-compose-yaml: docker-compose.yml
 
-project: drupal-base
+project: glyn-drupal-base
 
 tasks:
   pre-rollout:
@@ -40,3 +40,6 @@ environments:
         schedule: "M * * * *"
         command: drush cron
         service: cli
+    routes:
+      - nginx:
+        - drupal-base.scratchydog.net
